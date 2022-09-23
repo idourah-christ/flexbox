@@ -1,31 +1,46 @@
 /* flexbox vertical*/
 body {
-
+    display:flex;
+    flex-direction: column;
 }
 
 
 /* flexbox  */
 body > main {
+    display:flex;
+    flex-direction: row;
 }
 
 /* flexbox avec taille relative */
 body > main > section {
+    display: flex;
+    flex-direction: column;
+    width:80%;
 
 }
+body > main > aside {
+    display: inline;
 
+}
 /* flexbox avec taille relative fixes */
 body > main > section > .content {
+    display:flex;
+    flex-wrap: wrap;
+
 }
 
 /* dimensions */
 .card {
-
+    width:250px;
+    height:250px;
 }
 
 /* rotation */
 .card.flip{
+    transform: rotateY(180deg);
 }
 
 /* face arrière */
 .card > .back {
+    background-color: aquamarine;
 }
